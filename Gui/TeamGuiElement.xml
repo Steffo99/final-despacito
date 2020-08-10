@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/Amplitude.Unity.Gui.GuiElement.xsd">
+    <DiplomaticTermGuiElement Name="TeamRelation" Priority="4">
+        <Title>%DiplomaticTermTeamRelationTitle</Title>
+        <Description>%DiplomaticTermTeamRelationDescription</Description>
+        <Icons>
+            <Icon Size="Small" Path="Bitmaps/Atlased/Diplomacy/DiplomaticTermGeneric" />
+        </Icons>
+        <QuoteFormat>From$(PreviousRelationState)$(SenderOrReceiver)$(ContractState)$(Affinity)$(AIContext)</QuoteFormat>
+        <FallbackQuoteFormat>$(SenderOrReceiver)$(ContractState)$(Affinity)</FallbackQuoteFormat>
+    </DiplomaticTermGuiElement>
+</Datatable>

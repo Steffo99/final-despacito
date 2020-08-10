@@ -23,7 +23,16 @@
 
 		<!-- XML files to load -->
 		<Plugins>
-		</Plugins>
+            <DatabasePlugin DataType="DiplomaticTermDiplomaticRelationStateDefinition, Assembly-CSharp">
+                <FilePath>Diplomacy/TeamRelation.xml</FilePath>
+            </DatabasePlugin>
+            <DatabasePlugin DataType="DiplomaticTermGuiElement, Assembly-CSharp">
+                <FilePath>Gui/TeamGuiElement.xml</FilePath>
+            </DatabasePlugin>
+            <LocalizationPlugin DefaultLanguage="english">
+                <Directory>Localization</Directory>
+            </LocalizationPlugin>
+        </Plugins>
 
 	</RuntimeModule>
 </Datatable>

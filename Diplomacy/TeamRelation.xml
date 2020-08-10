@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/ForeignAffairsConstructibleElement.xsd">
+
+<DiplomaticTermDiplomaticRelationStateDefinition 
+        Name="TeamRelation" 
+        PropositionMethod="Negotiation" 
+        ApplicationMethod="Symmetrical" 
+        Category="CategoryTreaty"
+        SubCategory="SubCategoryDiplomaticTerm" 
+        Alignment="Good">
+    <!-- Disallow Teams with unknown players -->
+    <DiplomaticRelationStatePrerequisite Flags="Prerequisite,Discard" Inverted="true" Responsible="EmpireWhichReceives">DiplomaticRelationStateUnknown</DiplomaticRelationStatePrerequisite>
+    
+    <!-- Creating a Team costs 0 influence -->
+    <DiplomaticCost Responsible="EmpireWhichProposes" ResourceName="EmpireEmpirePoint">0</DiplomaticCost>
+    
+    <!-- Changes Relation State to Team -->
+    <DiplomaticRelationStateReference>DiplomaticRelationStateTeam</DiplomaticRelationStateReference>
+    
+</DiplomaticTermDiplomaticRelationStateDefinition>
+
+</Datatable>
